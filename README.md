@@ -1,10 +1,8 @@
 # Orbit
 Simple N-body gravity simulation
 
-![photo_510](https://github.com/koushik9988/orbit/assets/55924787/c0c33b99-7011-4619-b563-58f59583c401)
+![ezgif com-video-to-gif-converter](https://github.com/koushik9988/orbit/assets/55924787/dfbc0d34-8350-4e6f-9aae-554ddd6a43b7)
 
 
-
-https://github.com/koushik9988/orbit/assets/55924787/e06137bc-ab7a-4e5c-a414-00a979d8e354
 
 
