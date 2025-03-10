@@ -11,12 +11,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -g -O2")
 
 # Find Python development files (required for matplotlibcpp)
-find_package(Python3 COMPONENTS Development REQUIRED)
+find_package(Python3 COMPONENTS Interpreter Development NumPy REQUIRED)
 
 # Include directories
 include_directories(
     ${CMAKE_SOURCE_DIR}/include
     ${Python3_INCLUDE_DIRS}
+    ${Python3_NumPy_INCLUDE_DIRS}
 )
 
 # Source files
@@ -41,6 +42,7 @@ add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 # Link libraries
 target_link_libraries(${PROJECT_NAME}
     ${Python3_LIBRARIES}
+    ${Python3_NumPy_LIBRARIES}
 )
 
 # Ensure Python and HDF5 are found
